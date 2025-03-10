@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scent-Based Mood Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #4cae4c;
+        }
+        .results {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Scent-Based Mood Tracker</h2>
+        
+        <div class="input-group">
+            <label for="scent">Scent you smelled today:</label>
+            <input type="text" id="scent" placeholder="e.g. rain, coffee">
+        </div>
+        
+        <div class="input-group">
+            <label for="feeling">How did it make you feel?</label>
+            <input type="text" id="feeling" placeholder="e.g. calm, energized">
+        </div>
+
+        <button class="btn" id="addScentBtn">Add Scent</button>
+        
+        <div class="results" id="results">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
